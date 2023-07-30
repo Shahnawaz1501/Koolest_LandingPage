@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(150, 102, 102); */
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: red; */
+    border-bottom: 2px solid #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5vw;
+}
+.nav-part2{
+    display: flex;
+    /* background-color: blue; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 4vw;
+    cursor: pointer;
+}
+.nav h2{
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+.nav img{
+    height: 4vw;
+    width: 4vw;
+    cursor: pointer;
+    
+}
+.nav h4{
+    font-size: 1.2vw;
+}
+.nav button{
+    font-size: 1vw;
+    padding: 0.7vw 1.4vw;
+    background-color: #F26651;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.nav button:hover {
+    background-color: #FFC945; /* Change background color when hovering */
+  }
+.nav i{
+    font-size: 1.3vw;
+    font-weight: 600;
+    display: none;
+}
+.content{
+    height: calc(100% - 80px); 
+    width: 100%;
+    display: flex;
+}
+.left{
+    height: 100%;
+    width: 55%;
+    padding: 5vw 2.5vw;
+    background-color: #FFF;
+}
+.left h1{
+    font-size: 4.8vw;
+    line-height: 4.4vw;
+}
+.left h1 span{
+    color: #F26651;
+    font-size: 5vw;
+}
+.left p{
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+
+}
+.content button{
+    font-size: 1.2vw;
+    padding: 1vw 1vw;
+    background-color: #F26651;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 4vw;
+    margin-left: 30px;
+    
+}
+.content button:hover {
+    background-color: #5B968A; /* Change background color when hovering */
+  }
+.right{
+         height: 100%;
+        width: 45%;
+        background-color: brown;
+}
+.right img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+@media (max-width:600px){
+    .nav{
+        /* background-color: lightseagreen; */
+        color: antiquewhite;
+        height: 60px;
+    }
+    .nav h2{
+        font-size: 5.1vw;
+        font-weight: 700;
+        padding: 0 5vw;
+    }
+    .nav h4{
+        font-size: 1vw;
+        display: none;
+    }
+    .nav img{
+        height: 6vw;
+        width: 6vw;
+        cursor: pointer;
+    }
+    .nav button{
+        display: none;
+    }
+    .nav i{
+        display: block;
+        font-size: 4.5vw;
+    }
+.content{
+    height: calc(100% - 60px);
+    flex-direction: column;
+}
+.left{
+    background-color: #0e384a;
+    width: 100%;
+    height: 55%;
+    padding: 4vw 6vw;
+}
+.right{
+    background-color: #F26522;
+    width: 100%;
+    height: 45%;
+}
+.left h1{
+    font-size: 10vw;
+    line-height: 11vw;
+}
+.left h1 span{
+    font-size: 50px;
+}
+.left p{
+    font-size: 4vw;
+    width: 90%;
+    margin-top: 6vw;
+    margin-bottom: 7vw;
+}
+.content button{
+    padding: 3vw 7vw;
+    font-size: 3.5vw;
+    border-radius: 3.5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+.content button:hover {
+    background-color: #2980b9; /* Change background color when hovering */
+  }
+}
+
+ 
